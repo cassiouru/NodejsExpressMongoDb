@@ -3,7 +3,7 @@ var	router = express.Router();
 
 router.get('/', function(req, res){
 	res.status(201);
-	res.json({'key': 'ROLLA GRANDE'});
+	res.render('../views/index', { title : "Index" });
 });
 
 router.use('/cliente', require('./cliente'));
