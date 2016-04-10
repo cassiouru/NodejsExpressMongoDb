@@ -7,7 +7,7 @@ ClienteController.prototype.getall = function(req, res, next){
 		if(err)
 			return next(err);
 
-		res.json(data);
+		res.render('../views/index', { title: 'Clientes' });
 	});
 };
 

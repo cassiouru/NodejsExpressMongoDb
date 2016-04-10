@@ -27,4 +27,4 @@ ClienteModel.prototype.delete = function(_id, callback){
 
 module.exports = function(mongo){
 	return new ClienteModel(mongo);
-};
+};000
